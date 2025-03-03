@@ -38,4 +38,15 @@ ENV/
 .vscode/
 *.swp
 *.swo
-.DS_Store 
+.DS_Store "client_secret*.json" 
+
+# Google OAuth Credentials
+client_secret*.json
+credentials*.json
+token*.json
+
+# Remove the file from git tracking but keep it locally
+git rm --cached client_secret_677899335898-jtfq36k725mgsq497aulitg6g96bk0mt.apps.googleusercontent.com.json
+
+# Create or update your .gitignore file to ignore this file
+echo "client_secret*.json" >> .gitignore 
