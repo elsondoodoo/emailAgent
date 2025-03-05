@@ -11,9 +11,9 @@ load_dotenv('.env-local')
 os.environ["TAVILY_API_KEY"] = os.getenv("TAVILY_API_KEY")
 os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
 
-search = TavilySearchResults(max_results=3)
+search = TavilySearchResults(max_results=10)
 search_results = search.invoke(
-    "what are the emails of the UC Berkeley professors' emails that teach cs?"
+    "What are the emails of the UC Berkeley professors that teach Mathematics?"
 )
 
 # Email regex pattern
